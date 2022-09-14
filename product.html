@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Product - ShoppaStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="ShopeeLogo.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+        <img src="menu icon.png" class="menu-icon"
+        onclick="menutoggle()">
+    </div>   
+    </div>
+
+    <div class="small-container">
+
+        <div class="row row-2">
+            <h2>สินค้าทั้งหมด</h2>
+            <select>
+                <option>Default Shorting</option>
+                <option>Short by price</option>
+                <option>Short by popularity</option>
+                <option>Short by sale</option>
+            </select>
+        </div>
+    
+        <div class="row">
+            <div class="col-4">
+                <a href="product-details.html"><img src="product/tshirt1.png"></a>
+                <h4>เสื้อยืดตัวที่ 1</h4>
+                <p>50 บาท</p>
+        </div>
+            <div class="col-4">
+                <img src="product/tshirt2.png">
+                <h4>เสื้อยืดตัวที่ 2</h4>
+                <p>55 บาท</p>
+            </div>
+            <div class="col-4">
+                <img src="product/tshirt3.png">
+                <h4>เสื้อยืดตัวที่ 3</h4>
+                <p>60 บาท</p>
+            </div>
+            <div class="col-4">
+                <img src="product/tshirt4.png">
+                <h4>เสื้อยืดตัวที่ 4</h4>
+                <p>65 บาท</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="product/pants1.png">
+                <h4>กางเกงตัวที่ 1</h4>
+                <p>50 บาท</p>
+        </div>
+            <div class="col-4">
+                <img src="product/pants2.png">
+                <h4>กางเกงตัวที่ 2</h4>
+                <p>60 บาท</p>
+            </div>
+            <div class="col-4">
+                <img src="product/pants3.png">
+                <h4>กางเกงตัวที่ 3</h4>
+                <p>70 บาท</p>
+            </div>
+            <div class="col-4">
+                <img src="product/pants4.png">
+                <h4>กางเกงตัวที่ 4</h4>
+                <p>80 บาท</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="product/shoes1.png">
+                <h4>รองเท้าคู่ที่ 1</h4>
+                <p>999 บาท</p>
+        </div>
+            <div class="col-4">
+                <img src="product/shoes2.png">
+                <h4>รองเท้าคู่ที่ 2</h4>
+                <p>888 บาท</p>
+            </div>
+            <div class="col-4">
+                <img src="product/shoes3.png">
+                <h4>รองเท้าคู่ที่ 3</h4>
+                <p>777 บาท</p>
+            </div>
+            <div class="col-4">
+                <img src="product/shoes4.png">
+                <h4>รองเท้าคู่ที่ 4</h4>
+                <p>666 บาท</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="product/phone1.png">
+                <h4>โทรศัพท์เครื่องที่ 1</h4>
+                <p>123 บาท</p>
+        </div>
+            <div class="col-4">
+                <img src="product/phone2.png">
+                <h4>โทรศัพท์เครื่องที่ 2</h4>
+                <p>456 บาท</p>
+            </div>
+            <div class="col-4">
+                <img src="product/phone3.png">
+                <h4>โทรศัพท์เครื่องที่ 3</h4>
+                <p>789 บาท</p>
+            </div>
+            <div class="col-4">
+                <img src="product/phone4.png">
+                <h4>โทรศัพท์เครื่องที่ 4</h4>
+                <p>159 บาท</p>
+            </div>
+        </div>
+         
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594</span>
+        </div>
+    </div>
+
+
+<!-- js for toggle menu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px"
+                }
+        }
+    </script>
+
+</body>
+</html>
